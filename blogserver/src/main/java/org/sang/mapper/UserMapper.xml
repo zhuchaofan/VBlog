@@ -38,6 +38,7 @@
         <result column="userface" property="userface"/>
         <result column="regTime" property="regTime"/>
         <collection property="roles" ofType="org.sang.bean.Role">
+<!--            //这里写成rid，rname和数据库中的字段并不对应，在于下面代码使用到的地方取了别名是这个，所以是正确的-->
             <id column="rid" property="id"/>
             <result column="rname" property="name"/>
         </collection>

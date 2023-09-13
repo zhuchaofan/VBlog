@@ -162,6 +162,7 @@
           _this.$message({type: 'error', message: '数据加载失败!'});
         })
       },
+      // 记录选中时，将值记录到setItems中
       handleSelectionChange(val) {
         this.selItems = val;
       },
@@ -239,6 +240,7 @@
         });
       }
     },
+    // 属性从ArticleList.vue传过来的属性
     props: ['state', 'showEdit', 'showDelete', 'activeName', 'showRestore']
   }
 </script>

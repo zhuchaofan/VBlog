@@ -17,7 +17,9 @@ public class User implements UserDetails {
     private String username;
     private String password;
     private String nickname;
+    //MySQL8 数据库关于boolean 存储结构定义:使用tinyint(1) 代表Boolean 类型
     private boolean enabled;
+    //这里一个用户有多个角色，1对多的方式
     private List<Role> roles;
     private String email;
     private String userface;
